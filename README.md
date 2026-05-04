@@ -15,6 +15,7 @@ This project configures Snort on pfSense to shift network defense from reactive 
 - **Action** Define Custom ICMP detection rule within snort interface settings to monitor the `HOME_NET`
   - `alert icmp $HOME_NET any -> $EXTERNAL_NET any (msg:"Ping detected"; sid:1000001;)`
 - **Discovery** Successfully identified outbound ICMP requests to external DNS (8.8.8.8) in the snort alert
+  ![snort-lab](snort_IDS.jpg)
 
 ### Advanced Signature Development (Heuristic Bypass Prevention)
 - **Goal**: Detect malicious payloads even when attackers attempt to obfuscate file types via extension renaming like `.exe` or `.txt`

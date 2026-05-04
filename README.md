@@ -22,3 +22,4 @@ This project configures Snort on pfSense to shift network defense from reactive 
 - **Action**: Engineered a deep-packet inspection (DPI) rule targeting the MZ Magic Number `(0x4D 0x5A)` within the first two bytes of the file data.
    - `alert tcp $EXTERNAL_NET 80 -> $HOME_NET any (msg:"HTTP payload contains PE executable"; file_data; content:"|4D 5A|"; depth:2; sid:1000003;)`
 - **Discovery**: Identified a **Portable Executable**(PE) masquerading as a text file, proving that content based detection is superior to extension-based filtering.
+![Snort-lab-1](payload_alert.jpg)

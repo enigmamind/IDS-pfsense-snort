@@ -11,5 +11,5 @@ This project configures Snort on pfSense to shift network defense from reactive 
 
 ### Phase Investigation
 ### Custom Rule Engineering & IDS Validation
--**Goal** Establish baseline visibility into unauthorized network reconnaissance and validate signature-based alert
+- **Goal** Establish baseline visibility into unauthorized network reconnaissance and validate signature-based alert
 
